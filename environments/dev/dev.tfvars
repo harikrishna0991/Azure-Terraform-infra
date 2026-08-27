@@ -38,5 +38,15 @@ os_version     = "latest"
 vm_count       = 2
 vm_name_prefix = "vm-count"
 
+vms = {
+  "vm-web-01" = {
+    vm_size = "Standard_B1s"
+  }
+
+  "vm-web-02" = {
+    vm_size = "Standard_B1s"
+  }
+}
+
 
 

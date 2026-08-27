@@ -24,21 +24,21 @@ output "network_security_group_name" {
 }
 
 output "public_ip_address" {
-  description = "Public IP address of the Virtual Machine"
+  description = "Networking Public IP address"
   value       = module.networking.public_ip_address
 }
 
-#
-
-#
-output "virtual_machine_names" {
-  description = "Names of count-based virtual machines"
-  value       = module.count.vm_names
+output "for_each_vm_names" {
+  description = "Names of for_each virtual machines"
+  value       = module.for_each.vm_names
 }
 
-output "virtual_machine_ids" {
-  description = "IDs of count-based virtual machines"
-  value       = module.count.vm_ids
+output "for_each_vm_ids" {
+  description = "IDs of for_each virtual machines"
+  value       = module.for_each.vm_ids
 }
 
-
+output "for_each_public_ip_addresses" {
+  description = "Public IP addresses of for_each virtual machines"
+  value       = module.for_each.public_ip_addresses
+}

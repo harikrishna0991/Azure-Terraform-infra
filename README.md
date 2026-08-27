@@ -52,3 +52,21 @@ The following screenshots provide proof that the Terraform infrastructure was su
 ### VM 2 - NGINX
 
 ![NGINX on VM 2](images/count-vm2-nginx.png)
+
+## for_each Deployment Evidence
+
+### Resource Group
+
+![for_each Resource Group](images/for-each-resource-group.png)
+
+### Network Security Group
+
+![for_each Network Security Group](images/for-each-nsg.png)
+
+### Virtual Machines
+
+![for_each Virtual Machines](images/for-each-vm.png)
+
+### VM 1
+
+![for_each VM 1](images/for-each-vm1.png)

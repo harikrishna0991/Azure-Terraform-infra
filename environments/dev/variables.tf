@@ -91,3 +91,10 @@ variable "vm_name_prefix" {
   type    = string
   default = "vm-count"
 }
+variable "vms" {
+  description = "VM definitions for the for_each deployment"
+
+  type = map(object({
+    vm_size = string
+  }))
+}
