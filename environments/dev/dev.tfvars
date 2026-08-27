@@ -34,6 +34,9 @@ os_offer = "0001-com-ubuntu-server-jammy"
 
 os_sku = "22_04-lts"
 
-os_version = "latest"
+os_version     = "latest"
+vm_count       = 2
+vm_name_prefix = "vm-count"
+
 
 

@@ -82,3 +82,12 @@ variable "os_version" {
   description = "Operating system image version"
   type        = string
 }
+variable "vm_count" {
+  type    = number
+  default = 2
+}
+
+variable "vm_name_prefix" {
+  type    = string
+  default = "vm-count"
+}

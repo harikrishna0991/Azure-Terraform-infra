@@ -28,17 +28,17 @@ output "public_ip_address" {
   value       = module.networking.public_ip_address
 }
 
-output "virtual_machine_name" {
-  description = "Deployed Virtual Machine name"
-  value       = module.compute.virtual_machine_name
+#
+
+#
+output "virtual_machine_names" {
+  description = "Names of count-based virtual machines"
+  value       = module.count.vm_names
 }
 
-output "virtual_machine_id" {
-  description = "Deployed Virtual Machine ID"
-  value       = module.compute.virtual_machine_id
+output "virtual_machine_ids" {
+  description = "IDs of count-based virtual machines"
+  value       = module.count.vm_ids
 }
 
-output "private_ip_address" {
-  description = "Private IP address of the Virtual Machine"
-  value       = module.compute.private_ip_address
-}
+
